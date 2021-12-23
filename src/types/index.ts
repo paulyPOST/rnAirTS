@@ -1,2 +1,3 @@
-export * from "./TPost";
 export * from "./TCoordinate";
+export * from "./TDestination";
+export * from "./TPost";
