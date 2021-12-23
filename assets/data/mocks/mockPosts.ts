@@ -17,7 +17,7 @@ export const Posts = [
     type: "Private Room",
   },
   {
-    id: "0",
+    id: 0,
     imageURL:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
     type: "Private Room",
@@ -33,7 +33,7 @@ export const Posts = [
     },
   },
   {
-    id: "1",
+    id: 1,
     imageURL:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
     type: "Entire Flat",
@@ -49,7 +49,7 @@ export const Posts = [
     },
   },
   {
-    id: "2",
+    id: 2,
     imageURL:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
     type: "Private Property",
@@ -65,7 +65,7 @@ export const Posts = [
     },
   },
   {
-    id: "3",
+    id: 3,
     imageURL:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg",
     type: "Entire Flat",

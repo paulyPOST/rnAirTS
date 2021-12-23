@@ -1,8 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView, View } from "react-native";
-import { Home } from "@src/screens";
-import { Post } from "@src/components";
-import { Posts } from "@assets/data/mocks";
+import { Home, SearchResults } from "@src/screens";
 
 export default function App() {
   return (
@@ -10,7 +8,7 @@ export default function App() {
     <StatusBar style="auto" />
     <SafeAreaView>
       {/* <Home /> */}
-      <Post post={Posts[0]}/>
+      <SearchResults />
     </SafeAreaView>
     </>
   );
