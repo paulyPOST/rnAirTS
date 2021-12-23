@@ -4,8 +4,14 @@ import tw from "tailwind-rn";
 import { Destinations } from "@assets/data/mocks";
 import { TDestination } from "@src/types";
 import { Destination } from "@src/components/Destination";
+import { StackNavigationProp } from "@react-navigation/stack";
+import { StackParamList } from "@src/navigation";
+import { useNavigation } from "@react-navigation/native";
+
+type destinationSearchScreenProp = StackNavigationProp<StackParamList, "DestinationSearch">;
 
 export const DestinationSearch = () => {
+  const navigation = useNavigation<destinationSearchScreenProp>();
   const [searchText, setSearchText] = useState("");
 
   return (
@@ -20,7 +26,12 @@ export const DestinationSearch = () => {
       {/* List of destination results */}
       <FlatList<TDestination>
         data={Destinations}
-        renderItem={({ item }) => <Destination destination={item} />}
+        renderItem={({ item }) =>
+          <Destination
+            destination={item}
+            onPress={() => navigation.navigate("Guests")}
+          />
+        }
       />
     </View>
   );
